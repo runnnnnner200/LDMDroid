@@ -1,0 +1,9 @@
+me.ash.reader
+Click,(//android.widget.Button)[2]/parent::*
+Click,(//android.widget.Button)[3]/parent::*
+Click,//*[@resource-id="com.amrdeveloper.linkhub:id/link_title_layout"]
+Input,https://www.ruanyifeng.com/blog/atom.xml
+Click,//android.widget.TextView[@text="Search"]/parent::*
+Click,//android.widget.TextView[@text="Subscribe"]/parent::*
+Click,//*[@content-desc="Unread"]/parent::*
+Click,//*[@text="Unread"]/parent::*

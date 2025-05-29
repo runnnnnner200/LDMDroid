@@ -1,0 +1,10 @@
+com.nononsenseapps.notepad
+Click,//*[@resource-id="com.nononsenseapps.notepad:id/menu_add"]
+Back
+Click,//*[@resource-id="com.nononsenseapps.notepad:id/taskText"]
+Input,Note1
+Back
+Click,//*[@resource-id="com.nononsenseapps.notepad:id/menu_add"]
+Click,//*[@resource-id="com.nononsenseapps.notepad:id/taskText"]
+Input,Note2
+Back

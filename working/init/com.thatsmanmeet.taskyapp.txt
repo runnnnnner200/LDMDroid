@@ -1,0 +1,10 @@
+com.thatsmanmeet.taskyapp
+Click,//android.widget.FrameLayout[1]/D0.w0[1]/android.view.View[1]/android.view.View[1]/android.view.View[1]/android.view.View[3]
+Click,//android.widget.EditText
+Input,Task1
+Click,//android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.view.View[1]/android.view.View[1]/android.view.View[1]/android.view.View[1]/android.view.View[4]
+#
+Click,//android.widget.FrameLayout[1]/D0.w0[1]/android.view.View[1]/android.view.View[1]/android.view.View[1]/android.view.View[3]
+Click,//android.widget.EditText
+Input,Task2
+Click,//android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.view.View[1]/android.view.View[1]/android.view.View[1]/android.view.View[1]/android.view.View[4]

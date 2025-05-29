@@ -1,0 +1,19 @@
+**Description**
+When deleting a habit, the item does not immediately disappear from the habit list. It remains visible until the list is manually refreshed or revisited.
+
+**Step to Reproduce**
+
+1. Add any habit.
+2. Delete the habit.
+3. Observe that the deleted habit is still visible in the list until manually refreshed.
+
+**Expected Behavior**
+The deleted habit should be removed from the list immediately without requiring manual refresh.
+
+**Screenshots**
+https://github.com/user-attachments/assets/140a4c48-25e4-4c7f-83d5-3d62d28e0acb
+
+**Device/Environment Info**
+* Device: generic\_x86\_64 (Android Studio x86 emulator)
+* OS: Android 9.0 (Default Android System Image)
+* Version: v1.16.7+74

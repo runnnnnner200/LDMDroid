@@ -1,0 +1,15 @@
+ru.application.homemedkit
+Click,(//android.widget.Button)[3]
+Click,//androidx.compose.ui.platform.ComposeView[1]/android.view.View[1]/android.view.View[1]/android.view.View[1]/android.view.View[4]
+Click,//android.widget.EditText
+Input,Product1
+Click,(//android.widget.Button)[2]
+Back
+#
+Click,///androidx.compose.ui.platform.ComposeView[1]/android.view.View[1]/android.view.View[1]/android.view.View[1]/android.view.View[5]
+Click,//android.widget.EditText
+Input,Product2
+Click,(//android.widget.Button)[2]
+Back
+#
+Click,(//android.widget.Button)[3]

@@ -1,0 +1,73 @@
+#### **Bug Description**  
+When attempting to import or export data, if no file is selected and the user returns without making a selection, the app crashes.  
+
+#### **To Reproduce**  
+Steps to reproduce the behavior:  
+1. Launch the app.  
+2. Click on "Import/Export data".  
+3. Do not select any file and return.  
+
+#### **Expected Behavior**  
+The app should handle the case where no file is selected gracefully and not crash.  
+
+#### **Screen Recording**  
+https://github.com/user-attachments/assets/c055a859-8081-453a-a81f-42da484df015
+
+#### **Smartphone:**  
+- **Device:** generic_x86_64 (Android Studio x86 emulator)  
+- **OS:** Android 9.0 (Default Android System Image)  
+- **Version:** 2.2.1
+
+#### **Crash Log**  
+```
+--------- beginning of crash
+AndroidRuntime: FATAL EXCEPTION: main
+AndroidRuntime: Process: lying.fengfeng.foodrecords, PID: 3859
+AndroidRuntime: java.io.FileNotFoundException: No content provider: Empty
+AndroidRuntime:        at android.content.ContentResolver.openAssetFileDescriptor(ContentResolver.java:1299)
+AndroidRuntime:        at android.content.ContentResolver.openFileDescriptor(ContentResolver.java:1148)
+AndroidRuntime:        at android.content.ContentResolver.openFileDescriptor(ContentResolver.java:1102)
+AndroidRuntime:        at lying.fengfeng.foodrecords.MainActivity$onCreate$2$onActivityResult$1.invokeSuspend(MainActivity.kt:47)
+AndroidRuntime:        at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+AndroidRuntime:        at kotlinx.coroutines.internal.DispatchedContinuationKt.resumeCancellableWith(DispatchedContinuation.kt:365)
+AndroidRuntime:        at kotlinx.coroutines.intrinsics.CancellableKt.startCoroutineCancellable(Cancellable.kt:30)
+AndroidRuntime:        at kotlinx.coroutines.intrinsics.CancellableKt.startCoroutineCancellable$default(Cancellable.kt:25)
+AndroidRuntime:        at kotlinx.coroutines.CoroutineStart.invoke(CoroutineStart.kt:110)
+AndroidRuntime:        at kotlinx.coroutines.AbstractCoroutine.start(AbstractCoroutine.kt:126)
+AndroidRuntime:        at kotlinx.coroutines.BuildersKt__Builders_commonKt.launch(Builders.common.kt:56)
+AndroidRuntime:        at kotlinx.coroutines.BuildersKt.launch(Unknown Source:1)
+AndroidRuntime:        at kotlinx.coroutines.BuildersKt__Builders_commonKt.launch$default(Builders.common.kt:47)
+AndroidRuntime:        at kotlinx.coroutines.BuildersKt.launch$default(Unknown Source:1)
+AndroidRuntime:        at lying.fengfeng.foodrecords.MainActivity$onCreate$2.onActivityResult(MainActivity.kt:46)
+AndroidRuntime:        at lying.fengfeng.foodrecords.MainActivity$onCreate$2.onActivityResult(MainActivity.kt:45)
+AndroidRuntime:        at androidx.activity.result.ActivityResultRegistry$1.onStateChanged(ActivityResultRegistry.java:147)
+AndroidRuntime:        at androidx.lifecycle.LifecycleRegistry$ObserverWithState.dispatchEvent(LifecycleRegistry.kt:322)
+AndroidRuntime:        at androidx.lifecycle.LifecycleRegistry.forwardPass(LifecycleRegistry.kt:258)
+AndroidRuntime:        at androidx.lifecycle.LifecycleRegistry.sync(LifecycleRegistry.kt:294)
+AndroidRuntime:        at androidx.lifecycle.LifecycleRegistry.moveToState(LifecycleRegistry.kt:143)
+AndroidRuntime:        at androidx.lifecycle.LifecycleRegistry.handleLifecycleEvent(LifecycleRegistry.kt:126)
+AndroidRuntime:        at androidx.lifecycle.ReportFragment$Companion.dispatch$lifecycle_runtime_release(ReportFragment.kt:190)
+AndroidRuntime:        at androidx.lifecycle.ReportFragment.dispatch(ReportFragment.kt:85)
+AndroidRuntime:        at androidx.lifecycle.ReportFragment.onStart(ReportFragment.kt:54)
+AndroidRuntime:        at android.app.Fragment.performStart(Fragment.java:2548)
+AndroidRuntime:        at android.app.FragmentManagerImpl.moveToState(FragmentManager.java:1334)
+AndroidRuntime:        at android.app.FragmentManagerImpl.moveFragmentToExpectedState(FragmentManager.java:1576)
+AndroidRuntime:        at android.app.FragmentManagerImpl.moveToState(FragmentManager.java:1637)
+AndroidRuntime:        at android.app.FragmentManagerImpl.dispatchMoveToState(FragmentManager.java:3046)
+AndroidRuntime:        at android.app.FragmentManagerImpl.dispatchStart(FragmentManager.java:3003)
+AndroidRuntime:        at android.app.FragmentController.dispatchStart(FragmentController.java:193)
+AndroidRuntime:        at android.app.Activity.performStart(Activity.java:7165)
+AndroidRuntime:        at android.app.ActivityThread.handleStartActivity(ActivityThread.java:2937)
+AndroidRuntime:        at android.app.servertransaction.TransactionExecutor.performLifecycleSequence(TransactionExecutor.java:180)
+AndroidRuntime:        at android.app.servertransaction.TransactionExecutor.cycleToPath(TransactionExecutor.java:165)
+AndroidRuntime:        at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:142)
+AndroidRuntime:        at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:70)
+AndroidRuntime:        at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+AndroidRuntime:        at android.os.Handler.dispatchMessage(Handler.java:106)
+AndroidRuntime:        at android.os.Looper.loop(Looper.java:193)
+AndroidRuntime:        at android.app.ActivityThread.main(ActivityThread.java:6669)
+AndroidRuntime:        at java.lang.reflect.Method.invoke(Native Method)
+AndroidRuntime:        at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+AndroidRuntime:        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+AndroidRuntime:        Suppressed: kotlinx.coroutines.internal.DiagnosticCoroutineContextException: [StandaloneCoroutine{Cancelling}@23e46d, Dispatchers.Main.immediate]
+```

@@ -1,0 +1,45 @@
+## :writing_hand: Describe the bug
+When adding a new habit, if no label is selected before saving, the app crashes
+
+## :bomb: Steps to reproduce
+Tap the add button.
+Enter a habit name and optionally a description.
+Do not select any label and tap the save button.
+The app crashes.
+
+## :wrench: Expected behavior
+The app should handle cases where no label is selected gracefully by prompting users to select tags.
+
+## :camera: Screenshots
+https://github.com/user-attachments/assets/fbe3d853-dedf-448f-af9e-121aa9320e46
+
+## :iphone: Tech info
+- Device: generic_x86_64 (Android Studio x86 emulator)
+- OS: Android 12
+- App Version: 4.0.0
+
+## :page_facing_up: Additional context
+
+**Crash Log**
+```
+--------- beginning of crash  
+03-07 10:12:27.343  4294  4294 E AndroidRuntime: FATAL EXCEPTION: main  
+03-07 10:12:27.343  4294  4294 E AndroidRuntime: Process: rocks.poopjournal.todont, PID: 4294  
+03-07 10:12:27.343  4294  4294 E AndroidRuntime: java.lang.NullPointerException  
+03-07 10:12:27.343  4294  4294 E AndroidRuntime: 	at rocks.poopjournal.todont.fragments.HabitsFragment.addNewHabit$lambda$1(HabitsFragment.kt:167)  
+03-07 10:12:27.343  4294  4294 E AndroidRuntime: 	at rocks.poopjournal.todont.fragments.HabitsFragment.$r8$lambda$MkUJFrwx2y6UsLzr4KGrt9H3FBY(Unknown Source:0)  
+03-07 10:12:27.343  4294  4294 E AndroidRuntime: 	at rocks.poopjournal.todont.fragments.HabitsFragment$$ExternalSyntheticLambda0.onClick(D8$$SyntheticClass:0)  
+03-07 10:12:27.343  4294  4294 E AndroidRuntime: 	at android.view.View.performClick(View.java:7441)  
+03-07 10:12:27.343  4294  4294 E AndroidRuntime: 	at android.view.View.performClickInternal(View.java:7418)  
+03-07 10:12:27.343  4294  4294 E AndroidRuntime: 	at android.view.View.access$3700(View.java:835)  
+03-07 10:12:27.343  4294  4294 E AndroidRuntime: 	at android.view.View$PerformClick.run(View.java:28676)  
+03-07 10:12:27.343  4294  4294 E AndroidRuntime: 	at android.os.Handler.handleCallback(Handler.java:938)  
+03-07 10:12:27.343  4294  4294 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:99)  
+03-07 10:12:27.343  4294  4294 E AndroidRuntime: 	at android.os.Looper.loopOnce(Looper.java:201)  
+03-07 10:12:27.343  4294  4294 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:288)  
+03-07 10:12:27.343  4294  4294 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:7839)  
+03-07 10:12:27.343  4294  4294 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)  
+03-07 10:12:27.343  4294  4294 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:548)  
+03-07 10:12:27.343  4294  4294 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1003)  
+```
+

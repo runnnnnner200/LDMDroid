@@ -1,0 +1,39 @@
+#### **Bug Description**  
+When importing an empty data file, the app crashes due to an `IndexOutOfBoundsException`.  
+
+#### **To Reproduce**  
+Steps to reproduce the behavior:  
+1. Launch the app.  
+2. Delete all food items.  
+3. Click "Export Data" and save the file to any location.  
+4. Click "Import Data" and import the previously saved empty data file.  
+
+#### **Expected Behavior**  
+The app should handle empty data imports gracefully, either by displaying a warning message or skipping the import process, instead of crashing.  
+
+#### **Screen Recording**  
+https://github.com/user-attachments/assets/79dd4f06-850f-481d-bb1b-6e0f8cb924ad
+
+#### **Smartphone:**  
+- **Device:** generic_x86_64 (Android Studio x86 emulator)  
+- **OS:** Android 9.0 (Default Android System Image)  
+- **Version:** 2.2.1
+
+#### **Crash Log**  
+```
+--------- beginning of crash
+AndroidRuntime: FATAL EXCEPTION: main
+AndroidRuntime: Process: lying.fengfeng.foodrecords, PID: 3938
+AndroidRuntime: java.lang.IndexOutOfBoundsException: Index: 1, Size: 1
+AndroidRuntime:        at java.util.Collections$SingletonList.get(Collections.java:4863)
+AndroidRuntime:        at lying.fengfeng.foodrecords.MainActivity$onCreate$3$onActivityResult$1$2.invokeSuspend(MainActivity.kt:100)
+AndroidRuntime:        at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+AndroidRuntime:        at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:106)
+AndroidRuntime:        at kotlinx.coroutines.internal.LimitedDispatcher$Worker.run(LimitedDispatcher.kt:115)
+AndroidRuntime:        at kotlinx.coroutines.scheduling.TaskImpl.run(Tasks.kt:100)
+AndroidRuntime:        at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:584)
+AndroidRuntime:        at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:793)
+AndroidRuntime:        at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:697)
+AndroidRuntime:        at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:684)
+AndroidRuntime:        Suppressed: kotlinx.coroutines.internal.DiagnosticCoroutineContextException: [StandaloneCoroutine{Cancelling}@c55558f, Dispatchers.Main.immediate]
+```

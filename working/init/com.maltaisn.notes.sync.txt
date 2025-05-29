@@ -1,0 +1,8 @@
+com.maltaisn.notes.sync
+Click,//*[@resource-id="com.maltaisn.notes.sync:id/fab"]
+Input,Note1
+Back
+#
+Click,//*[@resource-id="com.maltaisn.notes.sync:id/fab"]
+Input,Note2
+Back

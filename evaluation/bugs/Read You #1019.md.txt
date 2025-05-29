@@ -1,0 +1,35 @@
+**Bug Description**
+After modifying an existing RSS feed to use an invalid or malformed URL (e.g., `a` or `bzsp://...`), attempting to open the feed's link crashes the app with an `ActivityNotFoundException`.
+
+**To Reproduce**
+Steps to reproduce the behavior:
+
+1. Long-press any existing feed to open the feed settings.
+2. Long-press the feed link to open the edit dialog.
+3. Change the link to an invalid URL (e.g., `a` or `bzsp://...`) and save.
+4. Reopen the feed settings and click the modified link.
+5. The app crashes.
+
+**Screen Recording**
+https://github.com/user-attachments/assets/0068f2a2-02df-4a75-a241-08ca62c8aa94
+
+
+**Expected Behavior**
+The app should validate the link format or handle the failure gracefully, showing an error or doing nothing instead of crashing.
+
+**Error Log**
+
+```
+android.content.ActivityNotFoundException: No Activity found to handle Intent { act=android.intent.action.VIEW dat=bzsp://www.ruanyifeng.com//atom.xml }
+    at android.app.Instrumentation.checkStartActivityResult(Instrumentation.java:2007)
+    at android.app.Instrumentation.execStartActivity(Instrumentation.java:1673)
+    ...
+    at me.ash.reader.ui.ext.ContextExtKt.openURL(ContextExt.kt:485)
+    ...
+```
+
+**Smartphone:**
+
+* Device: generic\_x86\_64 (Android Studio emulator)
+* OS: Android 9.0
+* App version: 0.12.2

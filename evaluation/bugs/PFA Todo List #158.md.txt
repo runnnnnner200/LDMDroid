@@ -1,0 +1,26 @@
+**Bug Description**  
+After deleting the last TO-DO list, the Settings entry is mistakenly recognized as a TO-DO list. The TO-DO list action menu appears for the Settings entry, and performing any operation on it results in an error log.  
+
+**To Reproduce**  
+Steps to reproduce the behavior:  
+1. Create only one TO-DO list.
+2. Delete the last remaining TO-DO list.  
+3. Open the navigation menu and observe that the Settings entry is incorrectly treated as a TO-DO list.  
+4. Attempt any action related to TO-DO lists.  
+5. Check the error logcat.  
+
+**Expected Behavior**  
+The Settings entry should not be recognized as a TO-DO list, and no TO-DO list actions should be available for it.  
+
+**Screen Recording**  
+https://github.com/user-attachments/assets/ae005936-1cf3-4d32-83d1-4384de95f77d
+
+**Smartphone:**  
+- Device: generic_x86_64 (Android Studio x86 emulator)  
+- OS: Android 12
+
+**Error Log**  
+```
+03-06 05:52:40.676  3172  3172 E PFA MainActivity: Todo list with ID 1 not found.  
+03-06 05:53:21.516  3172  3172 E PFA MainActivity: Todo list with ID 1 not found.  
+```

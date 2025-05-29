@@ -1,0 +1,9 @@
+com.maelchiotti.localmaterialnotes
+Click,//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.view.View[1]/android.view.View[1]/android.view.View[1]/android.view.View[1]/android.widget.Button[1]
+Click,//android.widget.EditText
+Input,Example Note1
+Back
+Click,//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.view.View[1]/android.view.View[1]/android.view.View[1]/android.view.View[1]/android.widget.Button[1]
+Click,//android.widget.EditText
+Input,Example Note2
+Back

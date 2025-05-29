@@ -1,0 +1,20 @@
+**Describe the bug**  
+After granting storage permission for the first time, the file manager does not automatically refresh the file list after file creation or deletion operations. 
+
+After the user navigates to another folder, everything returns to normal.
+
+**To Reproduce**  
+Steps to reproduce the behavior:
+1. Open the app and grant storage permissions when prompted.
+2. Perform a file creation or deletion operation.
+3. The file list does not update.
+
+**Screen recording**
+https://github.com/user-attachments/assets/ae3fc1af-da21-4a4c-8abe-0b2d71707ab0
+
+**Expected behavior**  
+The file list should automatically refresh and reflect any creation or deletion operations all the time.
+
+**Device Information**:  
+- Device: generic_x86_64 (Android Studio x86 emulator)  
+- OS: Android 9  

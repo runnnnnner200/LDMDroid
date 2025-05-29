@@ -1,0 +1,27 @@
+**Describe the bug**  
+When in search mode, the search results do not automatically refresh, causing file operations like creation, deletion, and modification not to reflect in the search results. This leads to inconsistencies where files do not show up, or deleted files still appear in the search results.
+
+**To Reproduce**  
+Steps to reproduce the behavior:
+1. Open the app and create a file "file1" in any folder.
+2. Perform a search for "file" and see that "file1" appears in the search results.
+3. Create a file "file2", but the search results do not automatically refresh, so "file2" is not visible.
+4. Manually refresh the search, and "file2" appears.
+5. Delete "file2", but the search results do not automatically refresh, and "file2" remains in the list.
+6. Rename "file2", and an error is displayed.
+
+**Screen recording**
+https://github.com/user-attachments/assets/6716617d-9861-4459-995c-448b7e6fe095
+
+**Expected behavior**  
+In search mode, any file operations (create, delete, rename) should immediately reflect in the search results, ensuring that the displayed files are up-to-date and avoiding errors like "No such file or directory."
+
+**Device Information**:  
+- Device: generic_x86_64 (Android Studio x86 emulator)  
+- OS: Android 9  
+
+**Suggested Fix Options**
+1. After any file operation (create, delete, rename) within the path, trigger a re-search to refresh the search results.
+2. Alternatively, modify the search results dynamically after any file operation to keep the displayed results synchronized with the actual file system.
+
+I look forward to your feedback and hope this can be addressed soon. Thank you for your attention to this matter!

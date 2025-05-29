@@ -1,0 +1,182 @@
+{
+    "apk_path": "working\\apks\\materialfiles.apk",
+    "dmf_type": "Search",
+    "data_group_match": {
+        "xpath": "/hierarchy/android.widget.FrameLayout[2]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/androidx.drawerlayout.widget.DrawerLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.widget.ScrollView[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.widget.GridView[1]",
+        "attributes": {
+            "index": "0",
+            "text": "",
+            "resource-id": "me.zhanghai.android.files:id/recyclerView",
+            "class": "android.widget.GridView",
+            "package": "me.zhanghai.android.files",
+            "content-desc": "",
+            "checkable": "false",
+            "checked": "false",
+            "clickable": "false",
+            "enabled": "true",
+            "focusable": "true",
+            "focused": "false",
+            "scrollable": "false",
+            "long-clickable": "false",
+            "password": "false",
+            "selected": "false",
+            "visible-to-user": "true",
+            "bounds": "[0,336][1080,2400]",
+            "drawing-order": "1",
+            "hint": ""
+        }
+    },
+    "actions": [
+        {
+            "type": "Click",
+            "target": {
+                "xpath": "/hierarchy/android.widget.FrameLayout[2]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/androidx.drawerlayout.widget.DrawerLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.widget.ScrollView[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/androidx.appcompat.widget.LinearLayoutCompat[1]/android.widget.Button[1]",
+                "attributes": {
+                    "index": "0",
+                    "text": "",
+                    "resource-id": "me.zhanghai.android.files:id/action_search",
+                    "class": "android.widget.Button",
+                    "package": "me.zhanghai.android.files",
+                    "content-desc": "Search",
+                    "checkable": "false",
+                    "checked": "false",
+                    "clickable": "true",
+                    "enabled": "true",
+                    "focusable": "true",
+                    "focused": "false",
+                    "scrollable": "false",
+                    "long-clickable": "false",
+                    "password": "false",
+                    "selected": "false",
+                    "visible-to-user": "true",
+                    "bounds": "[695,73][822,199]",
+                    "drawing-order": "1",
+                    "hint": ""
+                }
+            }
+        },
+        {
+            "type": "InputTexts",
+            "target": null,
+            "input": [
+                [
+                    "Search\u2026",
+                    "File2.txt"
+                ]
+            ]
+        },
+        {
+            "type": "Click",
+            "target": {
+                "xpath": "/hierarchy/android.widget.FrameLayout[2]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/androidx.drawerlayout.widget.DrawerLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.widget.ScrollView[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[2]/androidx.appcompat.widget.LinearLayoutCompat[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.EditText[1]",
+                "attributes": {
+                    "index": "0",
+                    "text": "File2.txt",
+                    "resource-id": "me.zhanghai.android.files:id/search_src_text",
+                    "class": "android.widget.EditText",
+                    "package": "me.zhanghai.android.files",
+                    "content-desc": "",
+                    "checkable": "false",
+                    "checked": "false",
+                    "clickable": "true",
+                    "enabled": "true",
+                    "focusable": "true",
+                    "focused": "true",
+                    "scrollable": "false",
+                    "long-clickable": "true",
+                    "password": "false",
+                    "selected": "false",
+                    "visible-to-user": "true",
+                    "bounds": "[189,88][801,183]",
+                    "drawing-order": "1",
+                    "hint": "Search\u2026"
+                }
+            }
+        },
+        {
+            "type": "LongClick",
+            "target": {
+                "xpath": "/hierarchy/android.widget.FrameLayout[2]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/androidx.drawerlayout.widget.DrawerLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.widget.ScrollView[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[2]/androidx.appcompat.widget.LinearLayoutCompat[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.EditText[1]",
+                "attributes": {
+                    "index": "0",
+                    "text": "File2.txt",
+                    "resource-id": "me.zhanghai.android.files:id/search_src_text",
+                    "class": "android.widget.EditText",
+                    "package": "me.zhanghai.android.files",
+                    "content-desc": "",
+                    "checkable": "false",
+                    "checked": "false",
+                    "clickable": "true",
+                    "enabled": "true",
+                    "focusable": "true",
+                    "focused": "true",
+                    "scrollable": "false",
+                    "long-clickable": "true",
+                    "password": "false",
+                    "selected": "false",
+                    "visible-to-user": "true",
+                    "bounds": "[189,88][801,183]",
+                    "drawing-order": "1",
+                    "hint": "Search\u2026"
+                }
+            }
+        },
+        {
+            "type": "Click",
+            "target": {
+                "xpath": "/hierarchy/android.widget.FrameLayout[2]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/androidx.drawerlayout.widget.DrawerLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.widget.ScrollView[1]/android.widget.LinearLayout[1]/android.widget.HorizontalScrollView[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]",
+                "attributes": {
+                    "index": "0",
+                    "text": "",
+                    "resource-id": "",
+                    "class": "android.widget.LinearLayout",
+                    "package": "me.zhanghai.android.files",
+                    "content-desc": "",
+                    "checkable": "false",
+                    "checked": "false",
+                    "clickable": "true",
+                    "enabled": "true",
+                    "focusable": "true",
+                    "focused": "false",
+                    "scrollable": "false",
+                    "long-clickable": "true",
+                    "password": "false",
+                    "selected": "false",
+                    "visible-to-user": "true",
+                    "bounds": "[158,210][604,336]",
+                    "drawing-order": "1",
+                    "hint": ""
+                }
+            }
+        },
+        {
+            "type": "Click",
+            "target": {
+                "xpath": "/hierarchy/android.widget.FrameLayout[2]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/androidx.drawerlayout.widget.DrawerLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.widget.ScrollView[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.widget.GridView[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]",
+                "attributes": {
+                    "NAF": "true",
+                    "index": "0",
+                    "text": "",
+                    "resource-id": "me.zhanghai.android.files:id/iconLayout",
+                    "class": "android.widget.FrameLayout",
+                    "package": "me.zhanghai.android.files",
+                    "content-desc": "",
+                    "checkable": "false",
+                    "checked": "false",
+                    "clickable": "true",
+                    "enabled": "true",
+                    "focusable": "true",
+                    "focused": "false",
+                    "scrollable": "false",
+                    "long-clickable": "false",
+                    "password": "false",
+                    "selected": "false",
+                    "visible-to-user": "true",
+                    "bounds": "[32,367][158,493]",
+                    "drawing-order": "1",
+                    "hint": ""
+                }
+            }
+        }
+    ]
+}
