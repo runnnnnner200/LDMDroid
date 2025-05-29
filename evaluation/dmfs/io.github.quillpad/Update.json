@@ -1,0 +1,77 @@
+{
+    "apk_path": "working\\apks\\io.github.quillpad_32.apk",
+    "dmf_type": "Update",
+    "data_group_match": {
+        "xpath": "/hierarchy/android.widget.FrameLayout[2]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/androidx.drawerlayout.widget.DrawerLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.view.ViewGroup[2]/androidx.recyclerview.widget.StaggeredGridLayoutManager[1]",
+        "attributes": {
+            "index": "0",
+            "text": "",
+            "resource-id": "io.github.quillpad:id/recycler_main",
+            "class": "androidx.recyclerview.widget.StaggeredGridLayoutManager",
+            "package": "io.github.quillpad",
+            "content-desc": "",
+            "checkable": "false",
+            "checked": "false",
+            "clickable": "false",
+            "enabled": "true",
+            "focusable": "true",
+            "focused": "false",
+            "scrollable": "false",
+            "long-clickable": "false",
+            "password": "false",
+            "selected": "false",
+            "visible-to-user": "true",
+            "bounds": "[0,210][1080,2274]",
+            "drawing-order": "1",
+            "hint": ""
+        }
+    },
+    "actions": [
+        {
+            "type": "Click",
+            "target": {
+                "xpath": "/hierarchy/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/androidx.drawerlayout.widget.DrawerLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.view.ViewGroup[2]/androidx.recyclerview.widget.StaggeredGridLayoutManager[1]/androidx.cardview.widget.CardView[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.TextView[1]",
+                "attributes": {
+                    "index": "0",
+                    "text": "Note2",
+                    "resource-id": "io.github.quillpad:id/text_view_title",
+                    "class": "android.widget.TextView",
+                    "package": "io.github.quillpad",
+                    "content-desc": "",
+                    "checkable": "false",
+                    "checked": "false",
+                    "clickable": "false",
+                    "enabled": "true",
+                    "focusable": "false",
+                    "focused": "false",
+                    "scrollable": "false",
+                    "long-clickable": "false",
+                    "password": "false",
+                    "selected": "false",
+                    "visible-to-user": "true",
+                    "bounds": "[52,262][487,322]",
+                    "drawing-order": "1",
+                    "hint": ""
+                }
+            }
+        },
+        {
+            "type": "InputTexts",
+            "target": null,
+            "input": [
+                [
+                    "Note2",
+                    "Notebook"
+                ],
+                [
+                    "Take a note!",
+                    "Remember to bring the notebook to the meeting."
+                ]
+            ]
+        },
+        {
+            "type": "Back",
+            "target": null
+        }
+    ]
+}

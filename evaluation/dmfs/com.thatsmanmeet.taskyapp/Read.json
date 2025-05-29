@@ -1,0 +1,59 @@
+{
+    "apk_path": "working\\apks\\com.thatsmanmeet.taskyapp_28.apk",
+    "dmf_type": "Read",
+    "data_group_match": {
+        "xpath": "/hierarchy/android.widget.FrameLayout[2]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/D0.w0[1]/android.view.View[1]/android.view.View[1]/android.view.View[1]/android.view.View[1]/android.view.View[1]",
+        "attributes": {
+            "index": "0",
+            "text": "",
+            "resource-id": "",
+            "class": "android.view.View",
+            "package": "com.thatsmanmeet.taskyapp",
+            "content-desc": "",
+            "checkable": "false",
+            "checked": "false",
+            "clickable": "false",
+            "enabled": "true",
+            "focusable": "false",
+            "focused": "false",
+            "scrollable": "false",
+            "long-clickable": "false",
+            "password": "false",
+            "selected": "false",
+            "visible-to-user": "true",
+            "bounds": "[42,273][1038,2232]",
+            "drawing-order": "0",
+            "hint": ""
+        }
+    },
+    "actions": [
+        {
+            "type": "Click",
+            "target": {
+                "xpath": "/hierarchy/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/D0.w0[1]/android.view.View[1]/android.view.View[1]/android.view.View[1]/android.view.View[1]/android.view.View[1]/android.view.View[1]/android.view.View[1]/android.widget.TextView[1]",
+                "attributes": {
+                    "index": "2",
+                    "text": "Task1",
+                    "resource-id": "",
+                    "class": "android.widget.TextView",
+                    "package": "com.thatsmanmeet.taskyapp",
+                    "content-desc": "",
+                    "checkable": "false",
+                    "checked": "false",
+                    "clickable": "true",
+                    "enabled": "true",
+                    "focusable": "true",
+                    "focused": "false",
+                    "scrollable": "false",
+                    "long-clickable": "false",
+                    "password": "false",
+                    "selected": "false",
+                    "visible-to-user": "true",
+                    "bounds": "[192,389][939,515]",
+                    "drawing-order": "0",
+                    "hint": ""
+                }
+            }
+        }
+    ]
+}

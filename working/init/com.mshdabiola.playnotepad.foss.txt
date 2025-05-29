@@ -1,0 +1,11 @@
+com.mshdabiola.playnotepad.foss
+Click,//*[@resource-id="main:add"]
+Click,//*[@resource-id="detail:title"]
+Input,Note1
+Back
+#
+Click,//*[@resource-id="main:add"]
+Click,//*[@resource-id="detail:title"]
+Input,Note2
+Back
+

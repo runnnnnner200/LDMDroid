@@ -1,0 +1,31 @@
+#### **Bug Description**
+
+If a label is deleted while it is being used to filter notes, newly created notes do not appear in the list until the filter is manually cleared. This creates confusion as the notes are still saved but not shown.
+
+#### **To Reproduce**
+
+Steps to reproduce the behavior:
+
+1. Create a new label (e.g., label "a").
+2. Switch to filtering notes by label "a".
+3. Delete label "a".
+4. Create a new note.
+5. Observe that the new note does not appear in the list.
+
+#### **Expected Behavior**
+
+After deleting a label that is currently being used as a filter, the app should automatically clear the filter so that all notes are visible again.
+
+#### **Screen Recording**
+
+https://github.com/user-attachments/assets/6dd688fc-19aa-49c8-80e5-02e934d4d42f
+
+#### **Smartphone:**
+
+* **Device:** generic\_x86\_64 (Android Studio x86 emulator)
+* **OS:** Android 9.0 (Default Android System Image)
+* **Version:** 1.3.7
+
+#### **Suggested Fix**
+
+After a label is deleted, check if the current filter is using that label. If so, automatically reset or clear the label filter to avoid an empty or misleading note list.

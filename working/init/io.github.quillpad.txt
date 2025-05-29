@@ -1,0 +1,13 @@
+io.github.quillpad
+Swipe,600,200,100,200
+Click,//x0.X[1]/android.view.View[1]/android.view.View[1]/android.view.View[1]/android.view.View[1]/android.view.View[1]
+Click,//*[@resource-id="io.github.quillpad:id/fab_create_note"]
+Click,//*[@resource-id="io.github.quillpad:id/edit_text_title"]
+Input,Note1
+Back
+#
+Click,//*[@resource-id="io.github.quillpad:id/fab_create_note"]
+Click,//*[@resource-id="io.github.quillpad:id/edit_text_title"]
+Input,Note2
+Back
+

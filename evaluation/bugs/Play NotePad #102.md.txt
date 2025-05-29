@@ -1,0 +1,39 @@
+**Bug Description**
+The app crashes when trying to add a voice recording to a note. This happens due to an unhandled `ActivityNotFoundException` when attempting to launch the speech recognition activity.
+
+**To Reproduce**
+Steps to reproduce the behavior:
+
+1. Tap on "Create New Note" button.
+2. Add a voice recording for the new note.
+3. The app crashes immediately.
+
+**Expected Behavior**
+The app should either:
+- Successfully launch a voice recording interface, or
+- Gracefully handle the absence of a speech recognition activity (e.g., show an error message or disable the feature if unsupported).
+
+**Screen Recording**
+https://github.com/user-attachments/assets/e3554d99-f46d-44f0-9cff-7944fa1d51c8
+
+**Smartphone:**
+
+- Device: generic_x86_64 (Android Studio x86 emulator)
+- OS: Android 9.0 (Default Android System Image)
+- Version: 1.3.7
+
+**Suggested Fix**
+Check if there's an app available to handle the `android.speech.action.RECOGNIZE_SPEECH` intent before launching it. If not, inform the user or disable the feature to avoid a crash.
+
+**Error Log**
+```
+FATAL EXCEPTION: main
+Process: com.mshdabiola.playnotepad.foss, PID: 3127
+java.lang.RuntimeException: Failure delivering result ResultInfo{...} to activity {...MainActivity}: 
+android.content.ActivityNotFoundException: No Activity found to handle Intent { act=android.speech.action.RECOGNIZE_SPEECH (has extras) }
+...
+Caused by: android.content.ActivityNotFoundException: No Activity found to handle Intent { act=android.speech.action.RECOGNIZE_SPEECH (has extras) }
+	at android.app.Instrumentation.checkStartActivityResult(Instrumentation.java:2007)
+	at android.app.Instrumentation.execStartActivity(Instrumentation.java:1673)
+	...
+```

@@ -1,0 +1,7 @@
+io.github.friesi23.mhabit
+Click,//*[@content-desc="New Habit"]
+Input,Habit1
+Click,//*[@content-desc="Save"]
+Click,//*[@content-desc="New Habit"]
+Input,Habit2
+Click,//*[@content-desc="Save"]

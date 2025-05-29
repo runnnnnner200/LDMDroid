@@ -1,0 +1,30 @@
+**Describe the bug**  
+The app fails to initialize properly when launched for the second time after installation, displaying a white screen instead. This issue occurs due to the missing storage permission and the lack of a permission request dialog.
+
+**Device Information**:  
+- Device: generic_x86_64 (Android Studio x86 emulator)  
+- OS: Android 9 
+
+**To Reproduce**  
+Steps to reproduce the behavior:
+1. Install or reset the app.
+2. Launch the app and complete guidance as normal.
+3. Exit the app.
+4. Re-enter the app, and the white screen will appear (indicating initialization failure).
+
+**Screen recording**
+https://github.com/user-attachments/assets/a5a46520-9b65-4128-b81a-be78cc10926c
+
+**Expected behavior**  
+The app should prompt for storage permission if not already granted and show the necessary permission dialog, instead of failing to initialize and displaying a white screen.
+
+**Related Logs**:  
+```
+02-22 06:59:54.452 23704 23742 E flutter : [ERROR:flutter/runtime/dart_vm_initializer.cc(41)] Unhandled Exception: Please allow storage permission to access files
+02-22 06:59:54.452 23704 23742 E flutter : #0      initializeApp (package:printnotes/main.dart:40)
+02-22 06:59:54.452 23704 23742 E flutter : <asynchronous suspension>
+02-22 06:59:54.452 23704 23742 E flutter : #1      main (package:printnotes/main.dart:19)
+02-22 06:59:54.452 23704 23742 E flutter : <asynchronous suspension>
+```
+
+I look forward to your feedback and hope this can be addressed soon. Thank you for your attention to this matter!

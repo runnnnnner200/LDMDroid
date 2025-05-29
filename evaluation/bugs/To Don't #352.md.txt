@@ -1,0 +1,40 @@
+## :writing_hand: Describe the bug
+When modifying a habit reminder, selecting the frequency as "Once" causes the app to crash due to a `SecurityException` related to missing the `SCHEDULE_EXACT_ALARM` permission.  
+
+## :bomb: Steps to reproduce
+<!-- How we can reproduce the behavior: -->
+1. Create any habit.  
+2. Edit the habit reminder.  
+3. Set the reminder frequency to "Once".  
+
+## :wrench: Expected behavior
+<!-- A clear and concise description of what you expected to happen. -->
+The app should handle this case properly by either requesting the required permission or falling back to a non-exact alarm scheduling method if the permission is missing.  
+
+## :camera: Screenshots
+<!-- If applicable, add screenshots to help explain your problem. -->
+https://github.com/user-attachments/assets/7f205a64-3e35-43c6-a814-4290fe765698
+
+## :iphone: Tech info
+- **Device:** generic_x86_64 (Android Studio x86 emulator)  
+- **OS:** Android 12.0 (Default Android System Image, API31)  
+- **Version:** [To be added manually]  
+
+## :page_facing_up: Additional context
+<!-- Add any other context about the problem here. -->
+Crash Log
+```
+Exception dispatching input event.  (InputEventReceiver)
+Exception in MessageQueue callback: handleReceiveCallback  (MessageQueue-JNI)
+java.lang.SecurityException: Caller rocks.poopjournal.todont needs to hold android.permission.SCHEDULE_EXACT_ALARM to set exact alarms.  (MessageQueue-JNI)
+at android.os.Parcel.createExceptionOrNull(Parcel.java:2426)  (MessageQueue-JNI)
+at android.os.Parcel.createException(Parcel.java:2410)  (MessageQueue-JNI)
+at android.os.Parcel.readException(Parcel.java:2393)  (MessageQueue-JNI)
+at android.os.Parcel.readException(Parcel.java:2335)  (MessageQueue-JNI)
+at android.app.IAlarmManager$Stub$Proxy.set(IAlarmManager.java:359)  (MessageQueue-JNI)
+at android.app.AlarmManager.setImpl(AlarmManager.java:947)  (MessageQueue-JNI)
+at android.app.AlarmManager.setImpl(AlarmManager.java:907)  (MessageQueue-JNI)
+at android.app.AlarmManager.setExact(AlarmManager.java:705)  (MessageQueue-JNI)
+at rocks.poopjournal.todont.utils.HabitsBottomSheetDialog.scheduleNotification(HabitsBottomSheetDialog.kt:262)  (MessageQueue-JNI)
+...
+```

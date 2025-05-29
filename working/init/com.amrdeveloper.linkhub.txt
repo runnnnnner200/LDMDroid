@@ -1,0 +1,16 @@
+com.amrdeveloper.linkhub
+Click,//*[@resource-id="com.amrdeveloper.linkhub:id/show_add_options"]
+Click,//*[@resource-id="com.amrdeveloper.linkhub:id/add_link_option"]
+Click,//*[@resource-id="com.amrdeveloper.linkhub:id/link_title_layout"]
+Input,Link1
+Click,//*[@resource-id="com.amrdeveloper.linkhub:id/link_url_layout"]
+Input,https://f-droid.org/
+Click,//*[@resource-id="com.amrdeveloper.linkhub:id/save_action"]
+#
+Click,//*[@resource-id="com.amrdeveloper.linkhub:id/show_add_options"]
+Click,//*[@resource-id="com.amrdeveloper.linkhub:id/add_link_option"]
+Click,//*[@resource-id="com.amrdeveloper.linkhub:id/link_title_layout"]
+Input,Link2
+Click,//*[@resource-id="com.amrdeveloper.linkhub:id/link_url_layout"]
+Input,https://f-droid.org/
+Click,//*[@resource-id="com.amrdeveloper.linkhub:id/save_action"]

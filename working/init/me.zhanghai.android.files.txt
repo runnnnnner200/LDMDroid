@@ -1,0 +1,17 @@
+me.zhanghai.android.files
+CleanFile
+Click,//*[@resource-id="com.android.packageinstaller:id/permission_allow_button"]
+Click,//*[@resource-id="com.android.packageinstaller:id/permission_allow_button"]
+Click,//*[@resource-id="me.zhanghai.android.files:id/nameText" and @text="Download"]
+#
+Click,//*[@resource-id="me.zhanghai.android.files:id/speedDialView"]
+Click,//*[@resource-id="me.zhanghai.android.files:id/sd_label" and @text="File"]
+Input,File1.txt
+Click,//*[@resource-id="android:id/button1"]
+Click,//*[@resource-id="android:id/button2"]
+#
+Click,//*[@resource-id="me.zhanghai.android.files:id/speedDialView"]
+Click,//*[@resource-id="me.zhanghai.android.files:id/sd_label" and @text="File"]
+Input,File2.txt
+Click,//*[@resource-id="android:id/button1"]
+Click,//*[@resource-id="android:id/button2"]

@@ -1,0 +1,8 @@
+org.secuso.privacyfriendlytodolist
+Click,//*[@resource-id="org.secuso.privacyfriendlytodolist:id/btn_skip"]
+Click,//*[@resource-id="org.secuso.privacyfriendlytodolist:id/fab_new_task"]
+Input,Task1
+Click,//*[@resource-id="org.secuso.privacyfriendlytodolist:id/bt_process_task_ok"]
+Click,//*[@resource-id="org.secuso.privacyfriendlytodolist:id/fab_new_task"]
+Input,Task2
+Click,//*[@resource-id="org.secuso.privacyfriendlytodolist:id/bt_process_task_ok"]

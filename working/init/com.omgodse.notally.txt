@@ -1,0 +1,10 @@
+com.omgodse.notally
+Click,//*[@resource-id="com.omgodse.notally:id/TakeNote"]
+Click,//*[@resource-id="com.omgodse.notally:id/EnterTitle"]
+Input,Note1
+Back
+#
+Click,//*[@resource-id="com.omgodse.notally:id/TakeNote"]
+Click,//*[@resource-id="com.omgodse.notally:id/EnterTitle"]
+Input,Note2
+Back

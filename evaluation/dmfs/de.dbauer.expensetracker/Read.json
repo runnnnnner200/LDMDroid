@@ -1,0 +1,59 @@
+{
+    "apk_path": "working\\apks\\de.dbauer.expensetracker_38.apk",
+    "dmf_type": "Read",
+    "data_group_match": {
+        "xpath": "/hierarchy/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/I0.w0[1]/android.view.View[1]/android.view.View[1]/android.view.View[1]/android.view.View[1]",
+        "attributes": {
+            "index": "0",
+            "text": "",
+            "resource-id": "",
+            "class": "android.view.View",
+            "package": "de.dbauer.expensetracker",
+            "content-desc": "",
+            "checkable": "false",
+            "checked": "false",
+            "clickable": "false",
+            "enabled": "true",
+            "focusable": "false",
+            "focused": "false",
+            "scrollable": "false",
+            "long-clickable": "false",
+            "password": "false",
+            "selected": "false",
+            "visible-to-user": "true",
+            "bounds": "[0,231][1080,2064]",
+            "drawing-order": "0",
+            "hint": ""
+        }
+    },
+    "actions": [
+        {
+            "type": "Click",
+            "target": {
+                "xpath": "/hierarchy/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/I0.w0[1]/android.view.View[1]/android.view.View[1]/android.view.View[1]/android.view.View[1]/android.view.View[1]",
+                "attributes": {
+                    "index": "6",
+                    "text": "",
+                    "resource-id": "",
+                    "class": "android.view.View",
+                    "package": "de.dbauer.expensetracker",
+                    "content-desc": "",
+                    "checkable": "false",
+                    "checked": "false",
+                    "clickable": "true",
+                    "enabled": "true",
+                    "focusable": "true",
+                    "focused": "false",
+                    "scrollable": "false",
+                    "long-clickable": "false",
+                    "password": "false",
+                    "selected": "false",
+                    "visible-to-user": "true",
+                    "bounds": "[42,620][1038,788]",
+                    "drawing-order": "0",
+                    "hint": ""
+                }
+            }
+        }
+    ]
+}

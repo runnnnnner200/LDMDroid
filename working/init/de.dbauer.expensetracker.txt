@@ -1,0 +1,14 @@
+de.dbauer.expensetracker
+Click,(//android.widget.Button)[2]/parent::*
+Click,//android.widget.EditText[1]
+Input,Expense1
+Click,//android.widget.EditText[3]
+Input,1
+Click,//android.widget.TextView[@text="Add Expense"]/parent::*
+#
+Click,(//android.widget.Button)[2]/parent::*
+Click,//android.widget.EditText[1]
+Input,Expense2
+Click,//android.widget.EditText[3]
+Input,2
+Click,//android.widget.TextView[@text="Add Expense"]/parent::*

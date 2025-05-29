@@ -1,0 +1,11 @@
+com.philkes.notallyx
+Click,//*[@resource-id="com.philkes.notallyx:id/TakeNote"]
+Click,//*[@resource-id="com.philkes.notallyx:id/EnterTitle"]
+Input,Note1
+Back
+#
+Click,//*[@resource-id="com.philkes.notallyx:id/TakeNote"]
+Click,//*[@resource-id="com.philkes.notallyx:id/EnterTitle"]
+Input,Note2
+Back
+

@@ -1,0 +1,16 @@
+**Bug Description**  
+In version v2.0.0-dev1, when sharing content to MaterialNotes, the content is converted into a JSON-like format: `[{"insert": xxx}]`. This issue does not occur in v1.12.1.
+
+**To Reproduce**  
+Steps to reproduce the behavior:
+1. Share any content to MaterialNotes.
+
+**Expected Behavior**  
+The content should be shared and displayed correctly in MaterialNotes, not in a JSON-like format.
+
+**Screen Recording**  
+https://github.com/user-attachments/assets/82871593-cd54-469b-8c7e-14ddd215c0ab
+
+**Smartphone**  
+- Device: generic_x86_64 (Android Studio x86 emulator)  
+- OS: Android 9

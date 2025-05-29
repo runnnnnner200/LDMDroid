@@ -1,0 +1,7 @@
+lying.fengfeng.foodrecords
+Click,//androidx.compose.ui.platform.ComposeView[1]/android.view.View[1]/android.view.View[1]/android.view.View[3]/android.view.View[4]
+Input,Food1
+Click,//android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.view.View[1]/android.view.View[1]/android.view.View[1]/android.widget.Button[4]
+Click,//androidx.compose.ui.platform.ComposeView[1]/android.view.View[1]/android.view.View[1]/android.view.View[3]/android.view.View[4]
+Input,Food2
+Click,//android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.view.View[1]/android.view.View[1]/android.view.View[1]/android.widget.Button[4]
